@@ -29,6 +29,9 @@
 		1C812FAB25AF2CA700037572 /* ConcreteAppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812FAA25AF2CA700037572 /* ConcreteAppCore.swift */; };
 		1C812FAF25AF2E1200037572 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812FAE25AF2E1200037572 /* Routable.swift */; };
 		1C812FB325AF2E6600037572 /* MainFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812FB225AF2E6600037572 /* MainFlowRouter.swift */; };
+		1C812FB725AF4B1200037572 /* LocationListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812FB625AF4B1200037572 /* LocationListViewCell.swift */; };
+		1C812FBA25AF4B6100037572 /* LocationListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812FB925AF4B6100037572 /* LocationListCellViewModel.swift */; };
+		1C812FBE25AF4ECB00037572 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812FBD25AF4ECB00037572 /* CGFloat+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		1C812FAA25AF2CA700037572 /* ConcreteAppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteAppCore.swift; sourceTree = "<group>"; };
 		1C812FAE25AF2E1200037572 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		1C812FB225AF2E6600037572 /* MainFlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowRouter.swift; sourceTree = "<group>"; };
+		1C812FB625AF4B1200037572 /* LocationListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewCell.swift; sourceTree = "<group>"; };
+		1C812FB925AF4B6100037572 /* LocationListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListCellViewModel.swift; sourceTree = "<group>"; };
+		1C812FBD25AF4ECB00037572 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 			children = (
 				1C812F8E25ADF6BA00037572 /* Business */,
 				1C812FA325AF2C4400037572 /* Core */,
+				1C812FBC25AF4E9E00037572 /* Extensions */,
 				1C812F8F25ADF6D000037572 /* Plugins */,
 				1C812F9025ADF6F400037572 /* Resources */,
 				1C812FAD25AF2D7400037572 /* Routers */,
@@ -180,6 +187,7 @@
 		1C812F9325ADF89A00037572 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1C812FB625AF4B1200037572 /* LocationListViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 		1C812F9425ADF8A100037572 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1C812FB925AF4B6100037572 /* LocationListCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -247,6 +256,14 @@
 				1C812FB225AF2E6600037572 /* MainFlowRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		1C812FBC25AF4E9E00037572 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C812FBD25AF4ECB00037572 /* CGFloat+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,14 +351,17 @@
 				1C812F8825ADF2C800037572 /* FSPageControl.swift in Sources */,
 				1C812F8625ADF2C800037572 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				1C812FAF25AF2E1200037572 /* Routable.swift in Sources */,
+				1C812FBE25AF4ECB00037572 /* CGFloat+Extensions.swift in Sources */,
 				1C812F5A25ADEA7100037572 /* LocationListViewController.swift in Sources */,
 				1C812FAB25AF2CA700037572 /* ConcreteAppCore.swift in Sources */,
 				1C812F5625ADEA7100037572 /* AppDelegate.swift in Sources */,
 				1C812F8425ADF2C800037572 /* FSPageViewTransformer.swift in Sources */,
 				1C812F9725ADFD3300037572 /* DetailedLocationViewController.swift in Sources */,
 				1C812F5825ADEA7100037572 /* SceneDelegate.swift in Sources */,
+				1C812FBA25AF4B6100037572 /* LocationListCellViewModel.swift in Sources */,
 				1C812F8A25ADF2C800037572 /* FSPagerCollectionView.swift in Sources */,
 				1C812F8325ADF2C800037572 /* FSPagerView.swift in Sources */,
+				1C812FB725AF4B1200037572 /* LocationListViewCell.swift in Sources */,
 				1C812FB325AF2E6600037572 /* MainFlowRouter.swift in Sources */,
 				1C812FA725AF2C7300037572 /* AppCore.swift in Sources */,
 				1C812F8525ADF2C800037572 /* FSPagerViewCell.swift in Sources */,
