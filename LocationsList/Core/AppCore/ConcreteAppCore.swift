@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import CoreLocation
 
 final class ConcreteAppCore: AppCore {
     // MARK: - Properties
     
-    // add here providers properties
+    let locationUseCaseProvider: UserLocationUseCaseProvider
     
     private let window: UIWindow
     private var rootRouter: Routable?
@@ -19,7 +20,7 @@ final class ConcreteAppCore: AppCore {
     
     init(window: UIWindow) {
         self.window = window
-        
+        locationUseCaseProvider = UserLocationUseCaseProvider(locationPlugin: LocationPlugin(locationManager: CLLocationManager()))
         setupRouter()
     }
     

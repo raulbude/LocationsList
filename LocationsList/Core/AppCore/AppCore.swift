@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AppCore: class {
-    // add providers
+    var locationUseCaseProvider: UserLocationUseCaseProvider { get }
     
     func start()
 }

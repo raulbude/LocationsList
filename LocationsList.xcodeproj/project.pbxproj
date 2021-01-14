@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C103B3A25B080EC00235A59 /* LocationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B3925B080EC00235A59 /* LocationListPresenter.swift */; };
+		1C103B3D25B0816800235A59 /* ConcreteLocationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B3C25B0816800235A59 /* ConcreteLocationListPresenter.swift */; };
+		1C103B4025B081DB00235A59 /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B3F25B081DB00235A59 /* LocationListViewModel.swift */; };
+		1C103B4425B082BF00235A59 /* LocationListUCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B4325B082BF00235A59 /* LocationListUCI.swift */; };
+		1C103B4825B084C900235A59 /* LocationListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B4725B084C900235A59 /* LocationListDTO.swift */; };
+		1C103B4C25B0868800235A59 /* LocationListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B4B25B0868800235A59 /* LocationListManager.swift */; };
+		1C103B5525B09AD000235A59 /* UserLocationUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B5425B09AD000235A59 /* UserLocationUseCaseProvider.swift */; };
+		1C103B5925B09B3900235A59 /* LocationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B5825B09B3900235A59 /* LocationPlugin.swift */; };
+		1C103B6025B0A51900235A59 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B5F25B0A51900235A59 /* Typealiases.swift */; };
 		1C812F5625ADEA7100037572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812F5525ADEA7100037572 /* AppDelegate.swift */; };
 		1C812F5825ADEA7100037572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812F5725ADEA7100037572 /* SceneDelegate.swift */; };
 		1C812F5A25ADEA7100037572 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812F5925ADEA7100037572 /* LocationListViewController.swift */; };
@@ -35,6 +44,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C103B3925B080EC00235A59 /* LocationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListPresenter.swift; sourceTree = "<group>"; };
+		1C103B3C25B0816800235A59 /* ConcreteLocationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteLocationListPresenter.swift; sourceTree = "<group>"; };
+		1C103B3F25B081DB00235A59 /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
+		1C103B4325B082BF00235A59 /* LocationListUCI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListUCI.swift; sourceTree = "<group>"; };
+		1C103B4725B084C900235A59 /* LocationListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListDTO.swift; sourceTree = "<group>"; };
+		1C103B4B25B0868800235A59 /* LocationListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListManager.swift; sourceTree = "<group>"; };
+		1C103B5425B09AD000235A59 /* UserLocationUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationUseCaseProvider.swift; sourceTree = "<group>"; };
+		1C103B5825B09B3900235A59 /* LocationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPlugin.swift; sourceTree = "<group>"; };
+		1C103B5F25B0A51900235A59 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		1C812F5225ADEA7100037572 /* LocationsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C812F5525ADEA7100037572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C812F5725ADEA7100037572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +94,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C103B4625B084BB00235A59 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				1C103B4725B084C900235A59 /* LocationListDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		1C103B5225B09A9000235A59 /* LocationList */ = {
+			isa = PBXGroup;
+			children = (
+				1C103B4B25B0868800235A59 /* LocationListManager.swift */,
+				1C103B4325B082BF00235A59 /* LocationListUCI.swift */,
+			);
+			path = LocationList;
+			sourceTree = "<group>";
+		};
+		1C103B5325B09AA300235A59 /* UserLocationUseCaseProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1C103B5425B09AD000235A59 /* UserLocationUseCaseProvider.swift */,
+			);
+			path = UserLocationUseCaseProvider;
+			sourceTree = "<group>";
+		};
 		1C812F4925ADEA7100037572 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +141,7 @@
 			children = (
 				1C812F8E25ADF6BA00037572 /* Business */,
 				1C812FA325AF2C4400037572 /* Core */,
+				1C103B4625B084BB00235A59 /* DTO */,
 				1C812FBC25AF4E9E00037572 /* Extensions */,
 				1C812F8F25ADF6D000037572 /* Plugins */,
 				1C812F9025ADF6F400037572 /* Resources */,
@@ -143,6 +187,8 @@
 		1C812F8E25ADF6BA00037572 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				1C103B5325B09AA300235A59 /* UserLocationUseCaseProvider */,
+				1C103B5225B09A9000235A59 /* LocationList */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -150,6 +196,7 @@
 		1C812F8F25ADF6D000037572 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				1C103B5825B09B3900235A59 /* LocationPlugin.swift */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -160,6 +207,7 @@
 				1C812F6325ADEA7300037572 /* Info.plist */,
 				1C812F5525ADEA7100037572 /* AppDelegate.swift */,
 				1C812F5725ADEA7100037572 /* SceneDelegate.swift */,
+				1C103B5F25B0A51900235A59 /* Typealiases.swift */,
 				1C812F5E25ADEA7300037572 /* Assets.xcassets */,
 				1C812F6025ADEA7300037572 /* LaunchScreen.storyboard */,
 			);
@@ -180,6 +228,8 @@
 		1C812F9225ADF89200037572 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1C103B3C25B0816800235A59 /* ConcreteLocationListPresenter.swift */,
+				1C103B3925B080EC00235A59 /* LocationListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -196,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				1C812FB925AF4B6100037572 /* LocationListCellViewModel.swift */,
+				1C103B3F25B081DB00235A59 /* LocationListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -347,20 +398,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C812F8725ADF2C800037572 /* FSPageViewLayout.swift in Sources */,
+				1C103B3D25B0816800235A59 /* ConcreteLocationListPresenter.swift in Sources */,
 				1C812F8925ADF2C800037572 /* FSPagerViewObjcCompat.m in Sources */,
+				1C103B4025B081DB00235A59 /* LocationListViewModel.swift in Sources */,
 				1C812F8825ADF2C800037572 /* FSPageControl.swift in Sources */,
 				1C812F8625ADF2C800037572 /* FSPagerViewLayoutAttributes.swift in Sources */,
+				1C103B5925B09B3900235A59 /* LocationPlugin.swift in Sources */,
+				1C103B5525B09AD000235A59 /* UserLocationUseCaseProvider.swift in Sources */,
 				1C812FAF25AF2E1200037572 /* Routable.swift in Sources */,
 				1C812FBE25AF4ECB00037572 /* CGFloat+Extensions.swift in Sources */,
 				1C812F5A25ADEA7100037572 /* LocationListViewController.swift in Sources */,
 				1C812FAB25AF2CA700037572 /* ConcreteAppCore.swift in Sources */,
 				1C812F5625ADEA7100037572 /* AppDelegate.swift in Sources */,
 				1C812F8425ADF2C800037572 /* FSPageViewTransformer.swift in Sources */,
+				1C103B4825B084C900235A59 /* LocationListDTO.swift in Sources */,
 				1C812F9725ADFD3300037572 /* DetailedLocationViewController.swift in Sources */,
+				1C103B6025B0A51900235A59 /* Typealiases.swift in Sources */,
 				1C812F5825ADEA7100037572 /* SceneDelegate.swift in Sources */,
 				1C812FBA25AF4B6100037572 /* LocationListCellViewModel.swift in Sources */,
+				1C103B4C25B0868800235A59 /* LocationListManager.swift in Sources */,
 				1C812F8A25ADF2C800037572 /* FSPagerCollectionView.swift in Sources */,
+				1C103B4425B082BF00235A59 /* LocationListUCI.swift in Sources */,
 				1C812F8325ADF2C800037572 /* FSPagerView.swift in Sources */,
+				1C103B3A25B080EC00235A59 /* LocationListPresenter.swift in Sources */,
 				1C812FB725AF4B1200037572 /* LocationListViewCell.swift in Sources */,
 				1C812FB325AF2E6600037572 /* MainFlowRouter.swift in Sources */,
 				1C812FA725AF2C7300037572 /* AppCore.swift in Sources */,

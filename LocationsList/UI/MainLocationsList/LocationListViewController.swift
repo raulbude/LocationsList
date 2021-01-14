@@ -11,7 +11,26 @@ import SnapKit
 class LocationListViewController: UIViewController {
     // MARK: - Properties
     
+    private let viewModel: LocationListViewModel
+    private var presenter: LocationListPresenter
     private let pagerView = FSPagerView(frame: .zero)
+    
+    // MARK: - Init
+    
+    init(viewModel: LocationListViewModel, presenter: LocationListPresenter) {
+        self.viewModel = viewModel
+        self.presenter = presenter
+        
+        super.init(nibName: nil, bundle: nil)
+        
+        self.presenter.locationAccessUpdate = { [weak self] in
+            self?.reloadWithLocationAccess($0)
+        }
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - UIViewController
     
@@ -41,6 +60,10 @@ class LocationListViewController: UIViewController {
 //            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
 //            $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
 //        }
+    }
+    
+    private func reloadWithLocationAccess(_ access: Bool) {
+        
     }
 }
 

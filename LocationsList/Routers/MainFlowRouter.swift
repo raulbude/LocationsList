@@ -23,8 +23,9 @@ final class MainFlowRouter: Routable {
     // MARK: - Routable
     
     func enter() {
-        let locationListVC = LocationListViewController()
-        let containerNavigationController = UINavigationController(rootViewController: locationListVC)
-        window.rootViewController = containerNavigationController
+//        let locationListVM = LocationListViewModel()
+//        let locationListVC = LocationListViewController(viewModel: <#T##LocationListViewModel#>, presenter: <#T##LocationListPresenter#>)
+//        let containerNavigationController = UINavigationController(rootViewController: locationListVC)
+//        window.rootViewController = containerNavigationController
     }
 }

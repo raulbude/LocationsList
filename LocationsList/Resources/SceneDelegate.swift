@@ -21,7 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         appCore = ConcreteAppCore(window: window)
         appCore?.start()
-
+        
+        appCore?.locationUseCaseProvider.requestAccess()
+        
         window.makeKeyAndVisible()
     }
 }
