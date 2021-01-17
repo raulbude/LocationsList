@@ -10,5 +10,6 @@ import UIKit
 extension CGFloat {
     static let f10: CGFloat = 10
     static let f20: CGFloat = 20
-    static let f150: CGFloat = 150
+    static let f100: CGFloat = 100
+    static let f250: CGFloat = 250
 }

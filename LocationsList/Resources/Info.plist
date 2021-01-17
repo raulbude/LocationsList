@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -20,6 +25,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>LocationList wants to use your location to give you the distance between you and some locations.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>LocationList wants to use your location to give you the distance between you and some locations.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>LocationList wants to use your location to give you the distance between you and some locations.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>LocationList wants to use your location to give you the distance between you and some locations.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

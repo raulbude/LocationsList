@@ -42,6 +42,7 @@ final class LocationPlugin: NSObject {
         
         super.init()
         self.locationManager.delegate = self
+        currentLocation = locationManager.location
     }
 
     // MARK: - Functions

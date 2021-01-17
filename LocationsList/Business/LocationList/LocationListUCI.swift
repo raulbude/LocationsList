@@ -9,8 +9,9 @@ import Foundation
 
 protocol LocationListUCI: class {
     func getAllLocationsList(completion: @escaping LocationListUCO.Response)
+    func getLocation(for label: String) -> Location?
 }
 
 protocol LocationListUCO {
-    typealias Response = (([LocationsList]?, String?) -> Void)
+    typealias Response = (([Location]?, String?) -> Void)
 }

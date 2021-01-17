@@ -16,6 +16,8 @@
 		1C103B5525B09AD000235A59 /* UserLocationUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B5425B09AD000235A59 /* UserLocationUseCaseProvider.swift */; };
 		1C103B5925B09B3900235A59 /* LocationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B5825B09B3900235A59 /* LocationPlugin.swift */; };
 		1C103B6025B0A51900235A59 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B5F25B0A51900235A59 /* Typealiases.swift */; };
+		1C103B6525B1DA2A00235A59 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B6425B1DA2A00235A59 /* UIImageView+Extensions.swift */; };
+		1C103B6D25B35B8400235A59 /* DetailedLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C103B6C25B35B8400235A59 /* DetailedLocationViewModel.swift */; };
 		1C812F5625ADEA7100037572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812F5525ADEA7100037572 /* AppDelegate.swift */; };
 		1C812F5825ADEA7100037572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812F5725ADEA7100037572 /* SceneDelegate.swift */; };
 		1C812F5A25ADEA7100037572 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812F5925ADEA7100037572 /* LocationListViewController.swift */; };
@@ -53,6 +55,8 @@
 		1C103B5425B09AD000235A59 /* UserLocationUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationUseCaseProvider.swift; sourceTree = "<group>"; };
 		1C103B5825B09B3900235A59 /* LocationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPlugin.swift; sourceTree = "<group>"; };
 		1C103B5F25B0A51900235A59 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		1C103B6425B1DA2A00235A59 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		1C103B6C25B35B8400235A59 /* DetailedLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLocationViewModel.swift; sourceTree = "<group>"; };
 		1C812F5225ADEA7100037572 /* LocationsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C812F5525ADEA7100037572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C812F5725ADEA7100037572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 		1C812F9A25ADFD4400037572 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1C103B6C25B35B8400235A59 /* DetailedLocationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				1C812FBD25AF4ECB00037572 /* CGFloat+Extensions.swift */,
+				1C103B6425B1DA2A00235A59 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C103B6525B1DA2A00235A59 /* UIImageView+Extensions.swift in Sources */,
 				1C812F8725ADF2C800037572 /* FSPageViewLayout.swift in Sources */,
 				1C103B3D25B0816800235A59 /* ConcreteLocationListPresenter.swift in Sources */,
 				1C812F8925ADF2C800037572 /* FSPagerViewObjcCompat.m in Sources */,
@@ -415,6 +422,7 @@
 				1C812F9725ADFD3300037572 /* DetailedLocationViewController.swift in Sources */,
 				1C103B6025B0A51900235A59 /* Typealiases.swift in Sources */,
 				1C812F5825ADEA7100037572 /* SceneDelegate.swift in Sources */,
+				1C103B6D25B35B8400235A59 /* DetailedLocationViewModel.swift in Sources */,
 				1C812FBA25AF4B6100037572 /* LocationListCellViewModel.swift in Sources */,
 				1C103B4C25B0868800235A59 /* LocationListManager.swift in Sources */,
 				1C812F8A25ADF2C800037572 /* FSPagerCollectionView.swift in Sources */,
@@ -563,15 +571,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QUR6K67AN2;
+				DEVELOPMENT_TEAM = 9298QC9R96;
 				INFOPLIST_FILE = LocationsList/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = raulbude.LocationsList;
+				PRODUCT_BUNDLE_IDENTIFIER = LocationsList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -582,15 +592,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QUR6K67AN2;
+				DEVELOPMENT_TEAM = 9298QC9R96;
 				INFOPLIST_FILE = LocationsList/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = raulbude.LocationsList;
+				PRODUCT_BUNDLE_IDENTIFIER = LocationsList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

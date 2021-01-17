@@ -11,6 +11,6 @@ struct LocationListCellViewModel {
     // MARK: - Properties
     
     let distance: Double
-    let address: String
-    let locationImage: UIImage
+    let label: String
+    let locationImageStringUrl: String
 }

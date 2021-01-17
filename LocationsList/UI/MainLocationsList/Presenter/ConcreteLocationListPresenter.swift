@@ -35,6 +35,9 @@ final class ConcreteLocationListPresenter: LocationListPresenter {
         self.userLocationProvider = dependency.userLocationProvider
         
         self.userLocationProvider.locationAccessUpdate = { [weak self] in
+            if $0 {
+                self?.getAllLocations()
+            }
             self?.locationAccessUpdate?($0)
         }
     }
@@ -48,8 +51,13 @@ final class ConcreteLocationListPresenter: LocationListPresenter {
                 self.view?.didFailToReceiveLocations(with: error ?? "")
                 return
             }
+            self.viewModel.userLocation = self.userLocationProvider.currentLocation
             self.viewModel.format(locations)
             self.view?.didReceiveLocations()
         }
+    }
+    
+    func didSelectItemWithLabel(_ label: String) {
+        router.goToDetailsScreen(for: label)
     }
 }

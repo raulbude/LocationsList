@@ -13,6 +13,7 @@ protocol LocationListPresenter {
     var isLocationAccessDenied: Bool { get }
 
     func getAllLocations()
+    func didSelectItemWithLabel(_ label: String)
 }
 
 protocol LocationListViewProtocol: class {

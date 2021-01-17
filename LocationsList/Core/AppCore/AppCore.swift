@@ -9,6 +9,6 @@ import Foundation
 
 protocol AppCore: class {
     var locationUseCaseProvider: UserLocationUseCaseProvider { get }
-    
+    var locationListUCI: LocationListUCI { get }
     func start()
 }
