@@ -10,10 +10,10 @@ import Foundation
 final class DetailedLocationViewModel {
     // MARK: - Properties
     
-    var address: String?
-    var label: String?
-    var latitude: Double?
-    var longitude: Double?
+    private(set) var address: String?
+    private(set) var label: String?
+    private(set) var latitude: Double?
+    private(set) var longitude: Double?
     
     // MARK: - Functions
     
