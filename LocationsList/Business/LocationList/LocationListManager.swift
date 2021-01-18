@@ -40,12 +40,14 @@ final class LocationListManager: LocationListUCI {
     
     private func saveLocationsInDB(_ locations: [Location]) {
         guard let realmDB = realmDB else { return }
-        do {
-            try realmDB.write {
-                realmDB.add(locations)
+        DispatchQueue.main.async {
+            do {
+                try realmDB.write {
+                    realmDB.add(locations)
+                }
+            } catch {
+                print(error)
             }
-        } catch {
-            print(error)
         }
     }
     
