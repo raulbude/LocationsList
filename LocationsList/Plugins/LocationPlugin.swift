@@ -71,7 +71,8 @@ final class LocationPlugin: NSObject {
 extension LocationPlugin: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         guard status != .notDetermined else { return }
-        locationUpdated = (status == .authorizedWhenInUse || status == .authorizedAlways) && locationUpdated
+        currentLocation = (status == .authorizedWhenInUse || status == .authorizedAlways) ? manager.location : nil
+        locationUpdated = (status == .authorizedWhenInUse || status == .authorizedAlways)
         locationAccessUpdate?(status == .authorizedWhenInUse || status == .authorizedAlways)
     }
 
